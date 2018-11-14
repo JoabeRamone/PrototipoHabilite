@@ -1,0 +1,51 @@
+
+<ion-header >
+
+  <ion-navbar color="primary" hideBackButton>
+    <ion-title>Resultado</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+
+<ion-content>
+  <ion-card>
+
+
+
+
+        <button *ngFor="let questao of questoes" class="quest" [ngClass] = "{'verde': questao.resultado, 'vermelho' : !questao.resultado } "
+                (click)="exibirModal(questao.resultado)" ion-button large full >
+          <b>{{questao.pergunta}}</b>
+        </button>
+
+        <!--<button class="quest" (click)="errado()" ion-button color="danger" block *ngIf="!questao1">-->
+          <!--<b>questao 1</b>-->
+        <!--</button>-->
+
+        <!--&lt;!&ndash;-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
+
+        <!--<button class="quest" (click)="correto()" ion-button color="secondary" block *ngIf="questao2">-->
+          <!--<b>Questão 2</b>-->
+        <!--</button>-->
+
+        <!--<button class="quest" (click)="errado()" ion-button color="danger" block *ngIf="!questao2">-->
+          <!--<b>Questão 2</b>-->
+        <!--</button>-->
+
+        <!--&lt;!&ndash;-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
+
+        <!--<button class="quest" (click)="correto()" ion-button color="secondary" block *ngIf="questao3">-->
+          <!--<b>Questão 3</b>-->
+        <!--</button>-->
+
+        <!--<button class="quest" (click)="errado()" ion-button color="danger" block *ngIf="!questao3">-->
+          <!--<b>Questão 3</b>-->
+        <!--</button>-->
+
+
+
+  </ion-card>
+</ion-content>

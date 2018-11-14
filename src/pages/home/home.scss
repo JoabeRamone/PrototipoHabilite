@@ -1,0 +1,39 @@
+page-home {
+  .scroll-content {
+    padding-bottom: 0 !important;
+  }
+  .bg-image {
+    background-image: url("/assets/Tr fego-de-Carros-Gifs-Baixar.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .ani{
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  }
+
+  .botao {
+    background-color: orange;
+    width: 330px;
+    height: 35px;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+
+  .img {
+    width: 200px;
+    height: 200px;
+    margin-top: 25px;
+    margin-left: 60px;
+  }
+  .logo {
+    //background-color: none;
+    border-radius: 100%;
+    margin: 50% auto;
+    width: 250px;
+    height: 250px;
+    outline: none;
+  }
+}

@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar color="primary" hideBackButton>
+    <ion-title>
+      Legislação
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img src="/assets/imgs/placas-de-sinalizacao.jpg"/>
+    <ion-card-content>
+      <p id="pergunta">
+        1) A placa destinada a informar aos usuários das condições, proibições, obrigações ou restrições ao uso da via é
+        a de:
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <button ion-button (click)="questao1()" full>obrigações</button>
+  <button ion-button (click)="questao1('regulamentação')" full >regulamentação</button>
+  <button ion-button (click)="questao1()" full >localização</button>
+  <button ion-button (click)="questao1()" full >especial</button>
+
+
+</ion-content>
